@@ -1,6 +1,6 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Jack
+ * Created by: Jack McNulty
  * Created on: Oct 2025
  * This program gets the distance from a sensor
 */
@@ -23,4 +23,3 @@ input.onButtonPressed(Button.A, function() {
     basic.showNumber(distanceToObject)
     basic.showIcon(IconNames.Happy)
 })
-

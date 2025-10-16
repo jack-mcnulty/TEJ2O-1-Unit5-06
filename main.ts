@@ -2,7 +2,7 @@
  *
  * Created by: Jack McNulty
  * Created on: Oct 2025
- * This program gets the distance from a sensor
+ * This program gets the distance from a sensor.
 */
 
 //Variables
@@ -14,12 +14,12 @@ basic.showIcon(IconNames.Happy)
 
 //Getting distance
 input.onButtonPressed(Button.A, function() {
-    basic.clearScreen()
     distanceToObject = sonar.ping(
     DigitalPin.P1,
     DigitalPin.P2,
     PingUnit.Centimeters
 )
+    basic.clearScreen()
     basic.showNumber(distanceToObject)
     basic.showIcon(IconNames.Happy)
 })
